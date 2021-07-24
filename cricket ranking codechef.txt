@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t,r1,w1,c1,r2,w2,c2,sol;
+	cin>>t;
+	while(t--) {
+sol=0;
+	    cin>>r1>>w1>>c1;
+	    cin>>r2>>w2>>c2;
+	    if(r1>r2) 
+sol+=1;
+else
+sol-=1;
+    if(w1>w2) 
+sol+=1;
+else
+sol-=1;
+    if(c1>c2) 
+sol+=1;
+else
+sol-=1;
+if(sol>0)
+cout<<"A";
+else
+cout<<"B";
+	}
+	return 0;
+}
